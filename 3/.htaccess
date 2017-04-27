@@ -1,0 +1,14 @@
+# Вариант 1 - запрет доступа
+Order Deny,Allow
+Deny from all
+Allow from 127.0.0.1
+
+# Вариант 2 - переадресация
+RewriteEngine On
+RewriteCond %{REQUEST_URI} !=/3/deny.php
+RewriteCond %{REMOTE_ADDR} !=127.0.0.1
+RewriteRule .* /3/deny.php [R=301,L]
+
+AddDefaultCharset UTF-8
+Options -Indexes
+

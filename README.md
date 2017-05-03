@@ -8,10 +8,10 @@
 7. 00:10
 
 Демо:
-1. http://dvglog.tw1.ru/sites/redline_test/1/
-2. http://dvglog.tw1.ru/sites/redline_test/2/
-6. http://dvglog.tw1.ru/sites/redline_test/6/
-7. http://dvglog.tw1.ru/sites/redline_test/7/
+- http://dvglog.tw1.ru/sites/redline_test/1/
+- http://dvglog.tw1.ru/sites/redline_test/2/
+- http://dvglog.tw1.ru/sites/redline_test/6/
+- http://dvglog.tw1.ru/sites/redline_test/7/
 
 Задание:
 

@@ -7,6 +7,12 @@
 6. 05:06
 7. 00:10
 
+Демо:
+http://dvglog.tw1.ru/sites/redline_test/1/
+http://dvglog.tw1.ru/sites/redline_test/2/
+http://dvglog.tw1.ru/sites/redline_test/6/
+http://dvglog.tw1.ru/sites/redline_test/7/
+
 Задание:
 
 1) Заверстать небольшой лендинг(landing.psd)

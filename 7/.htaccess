@@ -1,0 +1,4 @@
+php_value display_errors 1
+
+AddDefaultCharset UTF-8
+Options -Indexes

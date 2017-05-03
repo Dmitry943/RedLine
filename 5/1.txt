@@ -1,0 +1,42 @@
+==========================================
+Названия книг и авторы
+==========================================
+
+SELECT 
+	tb.*, 
+	ta.id AS author_id, 
+	ta.name AS author_name 
+FROM `books_book` AS tb 
+LEFT JOIN `books_book_nm_author` AS tba 
+	ON tba.id_book = tb.id 
+LEFT JOIN `books_author` AS ta 
+	ON tba.id_author = ta.id 
+WHERE tb.id IN 
+(
+	SELECT `id_book` 
+	FROM `books_book_nm_author` 
+	GROUP BY `id_book` 
+	HAVING COUNT(*)=3
+)
+ORDER BY tb.title
+
+==========================================
+Только названия книг (меньше нагрузки)
+==========================================
+
+SELECT tb.*
+FROM `books_book` AS tb,
+	`books_book_nm_author` AS tba,
+	`books_author` AS ta 
+WHERE 
+	tba.id_book = tb.id AND
+	tba.id_author = ta.id AND
+	tb.id IN 
+		(
+			SELECT `id_book` 
+			FROM `books_book_nm_author` 
+			GROUP BY `id_book` 
+			HAVING COUNT(*)=3
+		)
+GROUP BY tb.id 
+ORDER BY tb.title

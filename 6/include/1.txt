@@ -1,0 +1,3 @@
+ALTER TABLE `books_book_nm_author`
+  ADD CONSTRAINT `books_book` FOREIGN KEY (`id_book`) REFERENCES `books_book` (`id`) ON DELETE CASCADE ON UPDATE CASCADE,
+  ADD CONSTRAINT `books_authors` FOREIGN KEY (`id_author`) REFERENCES `books_author` (`id`) ON DELETE CASCADE ON UPDATE CASCADE;
